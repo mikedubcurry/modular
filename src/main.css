@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #555;
+}
+#keyboard {
+  max-width: 800px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2px;
+
+  margin: 0 auto;
+  border: solid 2px gold;
+  padding: 2rem;
+  background-color: purple;
+}
+
+.key {
+  width: 53px;
+  height: 100%;
+  float: left;
+  border: solid 1px #ddd;
+  border-radius: 8px;
+}
+
+.black {
+  height: 70%;
+  transform: translateX(calc(-50% - 5px));
+  width: 40px;
+  background-color: black;
+}
+.white {
+  background-color: white;
+}
+
+.key[data-note="d3"],
+.key[data-note="e3"],
+.key[data-note="g3"],
+.key[data-note="a3"],
+.key[data-note="b3"],
+.key[data-note="d4"],
+.key[data-note="e4"],
+.key[data-note="g4"],
+.key[data-note="a4"],
+.key[data-note="b4"] {
+  margin-left: -37px;
+}
+
+.white:active {
+  background-color: #eee;
+}
+.black:active {
+  background-color: #333;
+}

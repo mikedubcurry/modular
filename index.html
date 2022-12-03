@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="keyboard">
+      <div id="controls">
+        <label for="waveform"><span>waveform</span>
+          <select id="waveform">
+            <option value="sine">Sine</option>
+            <option value="sawtooth">Saw</option>
+            <option value="square">Square</option>
+            <option value="triangle">Triangle</option>
+          </select>
+        </label>
+        <label for='polyphony'>
+          <span>Polyphony</span>
+          <input type="number" min="1" max="5" id="polyphony" value="3" />
+        </label>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
